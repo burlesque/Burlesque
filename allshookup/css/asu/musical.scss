@@ -1,0 +1,139 @@
+
+#musical_content_container{
+  width: 100%;
+  max-width: 960px;
+  margin:auto;
+  position: relative;
+  display: inline-block;
+}
+
+#musical_poster{
+  overflow: hidden;
+  margin-top:25px;
+  margin-left:5%;
+  float:left;
+  width:39%;
+  //border: 2px solid $main_color;
+  box-shadow: 5px 5px 15px 2px grey;
+  img{
+    width: 100%;
+
+  }
+}
+
+
+#musical_about{
+  float:left;
+  width:40%;
+  margin-left:9%;
+  #musical_about_name{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #musical_about_text{
+    margin-top:25px;
+    border-radius: 4px;
+    padding:20px;
+    background-color:rgba(190,190,190,0.2);
+    p{
+      margin-bottom:5px;
+    }
+  }
+
+
+  #musical_about_button{
+  }
+}
+
+$timeline_height:60px;
+
+#musical_timeline{
+  height:$timeline_height;
+  margin-top:60px;
+  position: relative;
+  clear:both;
+  background-color: $main_color;
+  padding: 0px 10px;
+  #timeline{
+    margin:auto;
+    :first-child{
+      margin-left:5px;
+    }
+    li{
+      position: relative;
+      top:-2px;
+      height:$timeline_height;
+      font-size:90%;
+      padding:0px 1%;
+      display:inline-block;
+      margin-left:10px;
+      $hover_color: purple;
+      $text_color: white;
+      a{
+        position:relative;
+        top: $timeline_height/3;
+        display: inline-block;
+        margin:auto;
+        text-decoration: none;
+        color: $text_color;
+        &:hover{
+          color:$hover_color;
+        }
+      }
+
+     .current_page_a{
+       border-bottom: 2px solid $text_color;
+       &:hover{
+         cursor:default;
+         color:$text_color;
+
+         //border-bottom: 2px solid $hover_color ;
+       }
+     }
+    }
+    .current_page_li{
+      cursor:default;
+      background-color: rgba(50,50,50,0.9);
+    }
+  }
+}
+
+@media screen and (max-width: 960px){
+  #musical_timeline{
+    margin-top: 25px;
+    overflow: hidden;
+    height:auto;
+    padding: 0px;
+    #timeline {
+      height:auto;
+
+      li{
+        border-top:1px $main_color solid;
+        margin-left: 0;
+        display: block;
+        padding-left: 5px;
+      }
+      :first-child{
+        margin-left: 0;
+        border-top:0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+
+    #musical_poster{
+      float:none;
+      margin:auto;
+      min-width: 300px;
+      margin-bottom: 20px;
+    }
+
+  #musical_about{
+    margin-top:20px;
+    float:none;
+    margin:auto;
+    width:85%;
+  }
+}

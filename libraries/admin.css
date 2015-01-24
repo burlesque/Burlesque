@@ -1,0 +1,83 @@
+.x-body {
+	background-color: #DBE6F4;
+}
+div.x-grid-cell-inner img.menu_button_item {
+			background-image:url('./images/link.png');
+			width:26px;
+			height:26px;
+			vertical-align:middle;
+			margin-right:15px;
+}
+
+div.x-grid-cell-inner img.menu_item {
+			background-image:url('./images/menu.png');
+			width:26px;
+			height:26px;
+			vertical-align:middle;
+			margin-right:15px;
+}
+
+div.x-grid-cell-inner {
+	line-height:26px;
+}
+
+.x-tree-elbow, .x-tree-elbow-end, .x-tree-elbow-plus, .x-tree-elbow-end-plus, .x-tree-elbow-empty, .x-tree-elbow-line {
+height: 26px;
+width: 16px;
+}
+
+.reorder-icon .x-grid-cell-first .x-grid-cell-inner {
+	padding-left:20px;
+	background-image:url('./images/reorder.png');
+	background-repeat:no-repeat;
+	background-position: 5px 5px;
+}
+
+.reorder-icon .x-grid-row {
+	cursor:move;
+}
+
+#menus tr.x-grid-row .x-grid-cell-inner  {
+	cursor:move;
+}
+.x-tab-icon {
+	width: 26px;
+	height: 26px;
+}
+
+
+#admin-panel .x-tab-bar-strip {
+    top: 34px !important; /* Default value is 20, we add 20 = 40 */
+}
+
+#admin-panel .x-tab-bar .x-tab-bar-body {
+    height: 37px !important; /* Default value is 23, we add 20 = 43 */
+    border: 0 !important; /* Overides the border that appears on resizing the grid */
+}
+
+#admin-panel .x-tab-bar .x-tab-bar-body .x-box-inner {
+    height: 34px !important; /* Default value is 21, we add 20 = 41 */
+}
+
+#admin-panel .x-tab-bar .x-tab-bar-body .x-box-inner .x-tab {
+    height: 34px !important; /* Default value is 21, we add 20 = 41 */
+}
+
+#admin-panel .x-tab-bar .x-tab-bar-body .x-box-inner .x-tab button {
+    height: 26px !important; /* Default value 13, we add 20 = 33 */
+    line-height: 26px !important; /* Default value 13, we add 20 = 33 */
+   margin:0px 4px;
+}
+
+
+#admin-panel .x-tab-icon-text-left .x-tab-inner {
+padding-left: 36px;
+font-size: 13px;
+color: #1D1D1D;
+line-height: 12px;
+}
+
+.autocomplete_ct_type {
+	font-size:10px;
+	color:#404040;
+}

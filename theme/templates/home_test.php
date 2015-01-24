@@ -1,0 +1,414 @@
+<? $about = get_content(9); ?>
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>AUBG MEMPHIS MUSICAL</title>
+		
+			<!--styles-->
+			<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" type="text/css" href="{base_url}/theme/css/style.css">
+		
+			<!--scripts-->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+			<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.5/src/infobox.js"></script>
+			<script type="text/javascript" src="{base_url}/theme/js/js.js"></script>
+			<script type="text/javascript" src="{base_url}/theme/js/jquery.stellar.min.js"></script>
+			<script type="text/javascript" src="{base_url}/theme/js/waypoints.min.js"></script>
+			<script type="text/javascript" src="{base_url}/theme/js/jquery.easing.1.3.js"></script>
+  
+			
+		</head>
+	
+		<body>				
+			<ul class="navigation">
+				<li data-slide="1">Home</li>
+				<li data-slide="2">About</li>
+				<li data-slide="3">Tour Dates</li>
+				<li data-slide="4">Cast</li>
+				<li data-slide="5">News</li>
+				<li data-slide="6">About</li>
+			</ul>
+			<div class="language-bar">
+				<? echo(render_language_switcher('<a href="{language_link}"><img class="{language_signature}" src="{base_url}/theme/images/common/{language_signature}.png" /></a> ')); ?>
+			</div>
+			<div class="social">
+				<a href="#"><img class="facebook" src="{base_url}/theme/images/common/facebook.png" /></a>
+				<a href="#"><img class="twitter" src="{base_url}/theme/images/common/twitter.png" /></a>
+			</div>
+			<div class="tickets">
+				<a href="#"><img class="facebook" src="{base_url}/theme/images/common/tickets.png" /></a>
+			</div>
+		
+		          
+			
+			
+			<!--Slide 1-->
+			<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+				<a class="button" data-slide="2" title=""><!----></a>
+				<div class="main-content">
+					<img class="fake-bg-main" src="{base_url}/theme/images/slide1/main-image.png"/>
+				</div>
+				<img class="logo" src="{base_url}/theme/images/logo.png">		
+			</div><!--End Slide 1-->
+
+			<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<div class="images clearfix">
+						<h1 class="clearfix"><span class="left"><!----></span><?= $about['title_'.$lang] ?><span class="right"><!----></span></h1>
+						<div class="top-left fl">
+							<img src="{base_url}/theme/images/slide2/images/temp1.png"/>
+						</div>
+						<div class="top-right fl">
+							<img src="{base_url}/theme/images/slide2/images/temp2.png"/>
+						</div>
+						<div class="bottom-left fl">
+							<img src="{base_url}/theme/images/slide2/images/temp3.png"/>
+						</div>
+						<div class="bottom-right fl">
+							<img src="{base_url}/theme/images/slide2/images/temp4.png"/>
+						</div>
+					</div><!--/images-->
+					<div class="desc">
+						<div class="col"><?= $about['text_'.$lang] ?></div>
+					</div><!--/desc-->
+				</div>		
+				<span class="slideno">MEMPHIS</span>
+				<a class="button" data-slide="3" title=""></a>
+		
+			</div><!--End Slide 2-->
+
+			<!-- slide 3 -->
+			<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<div class="ask-us">
+						<form>
+							<h2>Ask us</h2>
+							<input type="text" value="_email"/>
+							<textarea>_your message here</textarea>
+							<input type="submit" value="Go"/>
+						</form>
+					</div>
+					<div class="explain">
+						<p>Кликни върху маркера, за да видиш театъра в който ще е постановката</p>
+					</div>
+					<div class="locations">
+						<div class="comming_up relative">
+							<?= render_content(5, '<h1>{title_'.$lang.'},<br> {show_date}<span class="shadow"><!------></span></h1>'); ?>
+							<div id="map_canvas_comming_up"><!----></div>
+						</div>
+						<div class="the_other_three_locations">
+							<div class="next_location">
+								<?= render_content(6, '<h1>{title_'.$lang.'},<br> {show_date}<span class="shadow"><!------></span></h1>'); ?>
+								<div id="map_canvas_sofia"><!----></div>
+							</div>
+							<div class="next_location">
+								<?= render_content(7, '<h1>{title_'.$lang.'},<br> {show_date}<span class="shadow"><!------></span></h1>'); ?>
+								<div id="map_canvas_plovdiv"><!----></div>
+							</div>
+							<div class="next_location">
+								<?= render_content(8, '<h1>{title_'.$lang.'},<br> {show_date}<span class="shadow"><!------></span></h1>'); ?>
+								<div id="map_canvas_varna"><!----></div>
+							</div>
+						</div>
+					</div><!-- locations -->
+				</div>
+		
+				<span class="slideno">MEMPHIS</span>
+				<a class="button" data-slide="4" title=""></a>
+		
+			</div><!--End Slide 3-->
+
+			<div class="slide big" id="slide4" data-slide="4" data-stellar-background-ratio="0">
+				<div class="wrapper">
+					<div class="actors clearfix">
+						<div class="one-seventh">
+							<div class="single-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp1.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="double-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp2.png" alt=""/></a>
+								<img src="{base_url}/theme/images/Slide4/actors/temp3.png" alt=""/>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h1>Едно Адскиългоиме</h1>
+									<h2>главна роля</h2>
+									<h2>става и за главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-two single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp4.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+						</div><!--/one-seventh-->
+						<div class="one-seventh">
+							<div class="double-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp2.png" alt=""/></a>
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp3.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h1>Едно Адскиългоиме</h1>
+									<h2>главна роля</h2>
+									<h2>става и за главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-two single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp4.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="double-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp2.png" alt=""/></a>
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp3.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h1>Едно Адскиългоиме</h1>
+									<h2>главна роля</h2>
+									<h2>става и за главна роля</h2>
+								</div>
+							</div>
+						</div><!--/one-seventh-->
+						<div class="one-seventh">
+							<div class="single-type-two single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp4.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-three single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp5.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp1.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+						</div><!--/one-seventh-->
+						<div class="one-seventh">
+							<div class="single-type-three single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp5.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp1.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="double-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp2.png" alt=""/></a>
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp3.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h1>Едно Адскиългоиме</h1>
+									<h2>главна роля</h2>
+									<h2>става и за главна роля</h2>
+								</div>
+							</div>
+						</div><!--/one-seventh-->
+						<div class="one-seventh">
+							<div class="single-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp1.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-two single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp4.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-three single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp5.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+						</div><!--/one-seventh-->
+						<div class="one-seventh">
+							<div class="double-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp2.png" alt=""/></a>
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp3.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h1>Едно Адскиългоиме</h1>
+									<h2>главна роля</h2>
+									<h2>става и за главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-two single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp4.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="double-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp2.png" alt=""/></a>
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp3.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h1>Едно Адскиългоиме</h1>
+									<h2>главна роля</h2>
+									<h2>става и за главна роля</h2>
+								</div>
+							</div>
+						</div><!--/one-seventh-->
+						<div class="one-seventh">
+							<div class="single-type-one single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp1.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Пенка Петрова</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-two single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp4.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+							<div class="single-type-three single-cell">
+								<a href="#"><img src="{base_url}/theme/images/Slide4/actors/temp5.png" alt=""/></a>
+								<div class="cast-description">
+									<h1>Георги Георгиев</h1>
+									<h2>главна роля</h2>
+								</div>
+							</div>
+						</div><!--/one-seventh-->
+					</div><!--actors-->
+					<div id="cast-pop-up">
+						<span class="arrow"><!----></span>
+						<h3>Името на актъора</h3>
+						<p>	2-ри курс студент по Бизнес 
+							Администрация и Економика. Обича 
+							дългите разходки по плажа и коктейли
+							със заоблени сламки. Няма си приятел.
+						</p>
+					</div>
+				</div>
+				
+		
+				<span class="slideno">MEMPHIS</span>
+				<a class="button" data-slide="5" title=""></a>
+		
+			</div><!--End Slide 4-->
+			
+			<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0">				
+				<div class="wrapper">	
+					<div class="photos">
+						<ul class="clearfix" id="the-list-of-thumbs">
+							<li>
+								<div><a href="{base_url}/theme/images/slide5/gallery/1.png"><img src="{base_url}/theme/images/slide5/thumbs/1.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/2.png"><img src="{base_url}/theme/images/slide5/thumbs/2.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/3.png"><img src="{base_url}/theme/images/slide5/thumbs/3.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/4.png"><img src="{base_url}/theme/images/slide5/thumbs/4.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/5.png"><img src="{base_url}/theme/images/slide5/thumbs/5.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/6.png"><img src="{base_url}/theme/images/slide5/thumbs/6.png"/></a></div>
+							</li>
+							<li>
+								<div><a href="{base_url}/theme/images/slide5/gallery/7.png"><img src="{base_url}/theme/images/slide5/thumbs/7.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/8.png"><img src="{base_url}/theme/images/slide5/thumbs/8.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/9.png"><img src="{base_url}/theme/images/slide5/thumbs/9.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/10.png"><img src="{base_url}/theme/images/slide5/thumbs/10.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/11.png"><img src="{base_url}/theme/images/slide5/thumbs/11.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/12.png"><img src="{base_url}/theme/images/slide5/thumbs/12.png"/></a></div>
+							</li>
+							<li>
+								<div><a href="{base_url}/theme/images/slide5/gallery/13.png"><img src="{base_url}/theme/images/slide5/thumbs/13.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/14.png"><img src="{base_url}/theme/images/slide5/thumbs/14.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/15.png"><img src="{base_url}/theme/images/slide5/thumbs/15.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/16.png"><img src="{base_url}/theme/images/slide5/thumbs/16.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/17.png"><img src="{base_url}/theme/images/slide5/thumbs/17.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/18.png"><img src="{base_url}/theme/images/slide5/thumbs/18.png"/></a></div>
+							</li>
+							<li>
+								<div><a href="{base_url}/theme/images/slide5/gallery/19.png"><img src="{base_url}/theme/images/slide5/thumbs/19.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/20.png"><img src="{base_url}/theme/images/slide5/thumbs/20.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/21.png"><img src="{base_url}/theme/images/slide5/thumbs/21.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/22.png"><img src="{base_url}/theme/images/slide5/thumbs/22.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/23.png"><img src="{base_url}/theme/images/slide5/thumbs/23.png"/></a></div>
+								<div><a href="{base_url}/theme/images/slide5/gallery/24.png"><img src="{base_url}/theme/images/slide5/thumbs/24.png"/></a></div>
+							</li>
+						</ul>
+						<div class="pagination clearfix">
+							
+						</div>
+						<div class="left-arrow"><!----></div>
+						<div class="right-arrow"><!----></div>
+					</div><!--/photos-->
+					<div class="news_feed clearfix">
+						<div class="news_right">
+							<h1>News feed</h1>
+							<ul id="news_feed_list">
+								<li><strong>2.03 - </strong><a href="news_001">Grease was very good musical</a></li>
+								<li><strong>2.04 - </strong><a href="news_002">Memphis will be even better musical</a></li>
+								<li><strong>22.05 - </strong><a href="news_003">Lorem ipsum dolor sit amet lorem ipsum</a></li>
+								<li><strong>4.06 - </strong><a href="news_004">Lorem ipsum dolor sit amet lorem ipsum</a></li>
+								<li><strong>21.12- </strong><a href="news_005">Lorem ipsum dolor</a></li>
+								<li><strong>21.02- </strong><a href="news_006">Lorem ipsum</a></li>
+							</ul>	
+							<div id="news-list-arrows" class="clearfix">
+								<div id="left-arrow"><!----></div>
+								<div id="right-arrow"><!----></div>
+							</div>
+						</div><!--/right-->
+						<div class="news_left" id="single-news-exchange">
+							<h1><!----></h1>
+							<div class="image-container">
+								<span class="mask"><!----></span>
+								<img src="" alt=""/>
+							</div>
+							<div class="news-txt"><!-----></div>
+						</div>
+					</div><!--/news feed-->			
+				</div>		
+				<span class="slideno">MEMPHIS</span>
+				<a class="button" data-slide="6" title=""></a>
+		
+			</div><!--End Slide 5-->
+			
+			
+			<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0">				
+				<div class="wrapper">		
+							
+				</div>		
+				<span class="slideno">MEMPHIS</span>		
+			</div><!--End Slide 5-->
+			<div id="gal-pop-up">
+				<div id="preloader"><!-----></div>
+				<div id="gal-nav">
+					<a href="#" id="gal-prev"><!----></a>
+					<a href="#" id="gal-next"><!----></a>
+					<a href="#" id="gal-close"><!----></a>
+				</div>
+			</div>
+		</body>
+	</html>

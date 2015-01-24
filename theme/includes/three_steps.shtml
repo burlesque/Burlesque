@@ -1,0 +1,27 @@
+<div id="three_steps">
+	<div class="wrapper">
+		<ul>
+			<li>
+				<span class="icon_holder presentation"><!--o--></span>
+				<div class="txt">
+					<h3>Презентация</h3>
+					<p>Амет също така е известен циганин чалга изпълнител, ако не знаеш да ти кажа. :)</p>
+				</div>
+			</li>
+			<li>
+				<span class="icon_holder disc"><!--o--></span>
+				<div class="txt">
+					<h3>Диск</h3>
+					<p>Лорем ипсум долор сит амет. Друга изжестна циганка чалга изпълнителка е Бони</p>
+				</div>
+			</li>
+			<li class="last_item">
+				<span class="icon_holder pack"><!--o--></span>
+				<div class="txt">
+					<h3>Опаковка</h3>
+					<p>Лорем ипсум, която участва в Биг Брадър и Софка Маринова.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,302 @@
+/* #Media Queries
+ ================================================== */
+@media only screen and (min-width: 960px) and (max-width: 980px) {
+	.boxed .holder {
+		width: 960px;
+	}
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	#navigation {
+		display: none;
+	}
+	.alt-nav {
+		display: block;
+		position: absolute;
+		top: 36px;
+		right: 10px;
+	}
+	/* boxed */
+	.boxed .alt-nav {
+		display: block;
+		position: absolute;
+		top: 36px;
+		right: 20px;
+	}
+	.action-btn {
+		margin-bottom: 7px;
+	}
+	/* boxed */
+	.boxed .events-alt .tour-dates .tour-place {
+		width: auto;
+		margin: 20px 20px 0 0;
+	}
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.alt-nav {
+		width: 50%;
+	}
+	.latest-item .action-btn {
+		margin-bottom: 3px;
+	}
+	.flickr_badge_image:nth-child(2n+1) {
+		margin-right: 0
+	}
+	.flickr_badge_image:nth-child(3n+1) {
+		margin-right: 10px;
+	}
+
+	/* boxed */
+	.down {
+		width: 100% !important;
+		margin: 0 !important;
+		left: 0 !important;
+	}
+	.boxed .holder {
+		width: 788px;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	#header h2#slug {
+		margin: 2px 0 0 0;
+	}
+
+	.slider-pagination {
+		display: none;
+	}
+	/* In Carousel keep the original border settings... */
+	#carousel .bordered {
+		border: 5px solid #000;
+	}
+	#carousel .bordered img {
+		border: none
+	}
+	/* But everywhere else it should fit the layout */
+	.bordered {
+		border: none;
+	}
+	.bordered img {
+		border: 5px solid #000;
+	}
+
+	.newsletter input {
+		margin: 0 0 10px 0;
+	}
+
+	/* boxed */
+	.down {
+		width: 100% !important;
+		margin: 0 !important;
+		left: 0 !important;
+	}
+	.post time, .widget time {
+		font-size: 14px;
+		background: none;
+		margin-bottom: 10px !important;
+	}
+	.post time span, .widget time span {
+		display: inline;
+		margin-left: 5px;
+		font-size: 14px;
+	}
+	.post-type {
+		display: none !important;
+	}
+	.bordered img {
+		border: none;
+	}
+	.widget .tour-dates li {
+		background-position: -70px bottom;
+	}
+	#carousel .slides li {
+		max-width: 150px;
+	}
+}
+
+/* Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 480px) {
+	.alignleft {
+		float: none;
+		display: block;
+	}
+	.alignright {
+		float: none;
+		display: block;
+	}
+	#header {
+		padding-top: 20px;
+	}
+	#header h2#slug {
+		text-align: center;
+		margin: 0 0 20px 0;
+	}
+	.section-title {
+		margin: 10px 0;
+	}
+	#logo {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.alt-nav {
+		width: 50%;
+		margin: 0 auto;
+		position: static;
+		width: 90%;
+	}
+
+	/* boxed */
+	.boxed .alt-nav {
+		width: 50%;
+		margin: 0 auto;
+		position: static;
+		width: 90%;
+	}
+	.slide-text {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		padding: 10px 15px 5px 15px;
+	}
+	.slide-text h2 {
+		font-size: 14px;
+	}
+	.boxed .slide-text h2 {
+		font-size: 12px;
+		margin: 0;
+		line-height: 1.1;
+	}
+	.flex-control-nav {
+		display: none;
+	}
+	.events-alt #map {
+		margin: 0 20px 20px 20px;
+	}
+	.flickr_badge_image:nth-child(3n+1) {
+		margin-right: 10px;
+	}
+	.post-comments .avatar {
+		display: none;
+	}
+	.post-comments .comment-copy {
+		margin-left: 0;
+	}
+	.post-comments ul {
+		margin-left: 0 !important;
+	}
+	.discography li {
+		margin-bottom: 20px !important;
+	}
+	.tracklisting .track-no {
+		display: none;
+	}
+	.tracklisting .track-info {
+		padding-right: 50px;
+	}
+	.album-cover {
+		padding-bottom: 20px;
+	}
+	.tour-place-alt {
+		clear: both;
+	}
+	.events .tour-dates .tour-place {
+		padding: 8px;
+		width: 218px;
+	}
+	.events .tour-dates .tour-date {
+		padding: 5px 0;
+	}
+	.events .tour-dates .sub-head {
+		font-size: 11px;
+	}
+	.events .tour-dates .main-head {
+		font-size: 11px;
+	}
+	.events .tour-dates .action-btn {
+		position: static;
+	}
+	#map {
+		height: 250px;
+	}
+
+	.post .post-meta-more {
+		width: 240px
+	}
+	.space-gap h1 {
+		font-size: 24px;
+	}
+	.wrap.newsletter h2 {
+		font-size: 18px;
+	}
+	input[type="text"], input[type="password"], input[type="email"], textarea {
+		margin: 0 0 10px 0;
+	}
+
+	/* boxed */
+	.boxed .events-alt .tour-dates .tour-place {
+		width: auto !important;
+	}
+	/* boxed */
+	.down {
+		bottom: 0
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.boxed .holder {
+		width: 480px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.boxed .holder {
+		width: auto;
+		padding: 10px;
+	}
+	.boxed .container {
+	}
+	.song-actions a {
+		font-sizee: 9px;
+		padding: 4px;
+	}
+	.events .tour-dates .tour-date {
+		padding: 20px 0;
+	}
+	.events .tour-dates .action-btn {
+		font-size: 10px;
+		padding: 4px 5px;
+		margin-top: 10px;
+	}
+
+	.events-alt .tour-date {
+		background: none;
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: left;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #303030;
+	}
+	.events-alt .tour-date .month, .events-alt .tour-date .day {
+		display: inline;
+		float: none;
+		width: auto;
+		font-size: 15px;
+		clear: none;
+		margin-right: 5px;
+	}
+}
+

@@ -1,0 +1,42 @@
+#src_list, #over_list, #out_list {width:190px;}
+.mceActionPanel {padding-top:9px;}
+.alignPreview {border:1px solid #000; width:180px; height:130px; overflow:hidden; padding:5px;}
+.checkbox {border:0;}
+.panel_wrapper div.current {height:305px;}
+#prev {margin:0; border:1px solid #000; width:428px; height:150px; overflow:auto;}
+#align, #classlist {width:150px;}
+#width, #height {vertical-align:middle; width:50px; text-align:center;}
+#vspace, #hspace, #border {vertical-align:middle; width:30px; text-align:center;}
+#class_list {width:190px;}
+input {width: 190px;}
+#constrain, #onmousemovecheck {width:auto;}
+#id, #dir, #lang, #usemap, #longdesc {width:190px;}
+#img_browser_div .image {
+	width:104px;
+	height:104px;
+	float:left;
+	border:1px solid #CCC;
+	text-align:center;
+	vertical-align:middle;
+	margin:3px;
+	position: relative;
+}
+#img_browser_div .selected_image {
+	border:1px solid #000;
+	background-color:#E4E4E4;
+}
+
+#img_browser_div .image img {
+	position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+#img_toolbar {
+	background-color:#F3F3F3;
+	margin:8px 3px;
+	padding:6px;
+}

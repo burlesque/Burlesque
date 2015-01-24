@@ -1,0 +1,9 @@
+/* line 1, ../tour.scss */
+#tour_container {
+  padding: 20px 35px;
+}
+
+/* line 5, ../tour.scss */
+#map_container {
+  height: 380px;
+}

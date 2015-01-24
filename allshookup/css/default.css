@@ -1,0 +1,160 @@
+/* GLOBAL: #Links
+ ================================================== */
+a, a:visited {
+	color: #00a7fa;
+}
+a:hover {
+	color: #FFF;
+}
+
+/* Carousel
+ ================================================== */
+.flex-direction-nav a {
+	background: url(../images/colors/default/bg_direction_nav.png) rgba(0, 0, 0, 0.4) no-repeat 0 0;
+}
+
+/* GLOBAL: #Buttons
+ ================================================== */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"], .btn-reply, .action-btn, .action-btn-small, .album-cover ol.playlist li .song-actions a {
+	color: #fff !important;
+	background-color: #00a7fa;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .btn-reply:hover, .action-btn:hover, .action-btn-small:hover, .album-cover ol.playlist li .song-actions a:hover {
+	background-color: #008edc;
+}
+
+.button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, .btn-reply:active, .action-btn:active, .album-cover ol.playlist li .song-actions a:active {
+	background-color: #2293f6;
+}
+
+/* GLOBAL: #Forms
+ ================================================== */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+	color: #fff;
+	border: 1px solid #00a7fa;
+}
+
+/* GLOBAL: #Footer
+ ================================================== */
+#footer a:hover {
+	color: #FFF;
+}
+#footer .widget ul li a:hover {
+	color: #00a7fa;
+}
+
+/* GLOBAL: #Widgets
+ ================================================== */
+span.album-actions:hover {
+	background: #00a7fa
+}
+span.album-actions:hover a {
+	background: #00a7fa url(../images/colors/default/view.png) left -30px no-repeat;
+}
+
+/* MODULE: #Main navigation
+ ================================================== */
+.sf-menu a {
+	color: #fff;
+	font-size: 16px;
+}
+.sf-menu > li > a:hover, .sf-menu > li.active a, .current-menu-item a, .current-menu-parent a {
+	color: #00a7fa
+}
+.sf-menu li ul li a:hover {
+	border-bottom: 1px solid #252325;
+	background-color: #00a7fa
+}
+.sf-menu li a.active {
+	color: #00a7fa;
+}
+.sf-menu li.selected {
+	background: url(../images/colors/default/active-nav.png) no-repeat center top;
+}
+
+/* MODULE: #Homepage slider
+ ================================================== */
+.arrows a {
+	background: rgba(0, 0, 0, 0.15);
+}
+.arrows a:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+.arrows .next,
+.arrows .previous {
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.arrows .next {
+	right: 0;
+}
+.arrows .previous {
+	left: 0;
+}
+#carousel li:hover .bordered, #carousel li.flex-active-slide .bordered {
+	border: 5px solid #00a7fa;
+}
+
+/* MODULE: #News
+ ================================================== */
+.post .post-type a {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: #00a7fa;
+}
+
+/* MODULE: #Galleries
+ ================================================== */
+a.action-btn.view {
+	display: block;
+	text-indent: -3000px;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	background: url(../images/colors/default/view.png) top left no-repeat;
+}
+a.action-btn.view:hover {
+	background: url(../images/colors/default/view.png) left -30px no-repeat;
+}
+
+/* Paging Styles
+ ================================================== */
+#paging a:hover {
+	color: #fff;
+}
+#paging span.current {
+	background: #00a7fa;
+	color: #fff;
+}
+
+/* WIDGET: #Tour Dates
+ ================================================== */
+.events .tour-date {
+	background-color: #00a7fa;
+}
+
+/* WIDGET: #Flickr
+ ================================================== */
+.flickr_badge_image:hover {
+	border: 5px solid #00a7fa;
+}
+
+.fluid-width-video-wrapper {
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+.fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

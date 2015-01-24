@@ -1,0 +1,58 @@
+<div id="main_articles">
+	<div class="wrapper">
+		<div class="three_articles">
+			<div class="one-third-col">
+				<h1>Новини</h1>
+				<div class="single_article">
+					<h2>Мишо има големи и красиви очи</h2>
+					<div class="date">30.09.2012 / 5:30 а.м.</div>
+					<p>Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor. Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor.</p>
+					<p class="more"><a href="#">още</a></p>
+				</div>
+				<div class="separator"><!--o--></div>
+				<div class="single_article">
+					<h2>Крис е мега яка</h2>
+					<div class="date">30.09.2012 / 5:30 а.м.</div>
+					<p>Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor. Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor.</p>
+					<p class="more"><a href="#">още</a></p>
+				</div>
+			</div>
+			<div class="one-third-col">
+				<h1>За нас</h1>
+				<div class="single_article">
+					<h2>10 години разчитате на нас</h2>
+					<p>
+						Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor. Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor.
+						Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor. Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor.
+						Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor. Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor.
+					</p>
+					<blockquote>Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor. Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor, rem ipsum dolor rem ipsum dolor.Lorem ipsum dolor.</blockquote>
+				</div>
+			</div>
+			<div class="one-third-col">
+				<h1>Нашите клиенти</h1>
+				<div class="single_article">
+					<table>
+						<tr>
+							<td><a href="#"><img src="images/clients/banka_dsk.png" alt="" /></a></td>
+							<td><a href="#"><img src="images/clients/mtel.png" alt="" /></a></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="images/clients/mtel.png" alt="" /></a></td>
+							<td><a href="#"><img src="images/clients/telerik.png" alt="" /></a></td>
+						</tr>
+					</table>
+					<p class="more"><a href="#">портфолиото ни</a></p>
+				</div>
+				<h1>Калкулатор</h1>
+				<div class="single_article">
+					<div id="calculator">
+						<span class="calc_icon"><!--o--></span>
+						<a href="#"><span class="arrow_icon"><!--o--></span></a>
+						<div>Изчисли своята поръчка</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	

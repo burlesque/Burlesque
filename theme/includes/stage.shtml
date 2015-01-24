@@ -1,0 +1,55 @@
+<div id="stage">
+	<div class="wrapper">
+		<div id="stage_holder">
+			
+			<div id="top">
+				<div class="navigation">
+					<div id="prev"><!--o--></div>
+					<div id="next"><!--o--></div>
+					<div id="info_holder">
+						<h1>Лорем ипсум</h1><br>
+						<h2>Долор сит амет, лорем ипсум</h2><br>
+						<p>20.09.2012</p>
+					</div>
+				</div>			
+			</div>
+			
+			<div id="bottom">
+				<ul id="carousel">
+					<li class="active">
+						<img src="images/stage/1.png" alt="" />
+						<div class="info">
+							<h1>Лорем ипсум1</h1>
+							<h2>Долор сит амет, лорем ипсум</h2>
+							<p>20.09.2012</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/stage/2.png" alt="" />
+						<div class="info">
+							<h1>Лорем ипсум2</h1>
+							<h2>Долор сит амет, лорем ипсум</h2>
+							<p>20.09.2012</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/stage/3.png" alt="" />
+						<div class="info">
+							<h1>Лорем ипсум3</h1>
+							<h2>Долор сит амет, лорем ипсум</h2>
+							<p>20.09.2012</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/stage/4.png" alt="" />
+						<div class="info">
+							<h1>Лорем ипсум4</h1>
+							<h2>Долор сит амет, лорем ипсум</h2>
+							<p>20.09.2012</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

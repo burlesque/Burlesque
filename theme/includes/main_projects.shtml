@@ -1,0 +1,63 @@
+<div id="main_projects">
+	<div class="wrapper">
+		<div class="three_projects">
+			<div class="one-third-col">
+				<div class="single_project">
+					<h2>Nivea Кампания</h2>
+					<div class="frame">
+						<img src="images/temp/1.png" alt="" />
+					</div>
+					<p>This section offers great possibilities to compare plans, products.</p>
+					<ul>
+						<li>SEO Optimised</li>
+						<li>Browser History</li>
+					</ul>
+					<p class="btn"><a href="#">
+						<span class="left"><!--o--></span>
+						<span class="mid">прочети още</span>
+						<span class="right"><!--o--></span>
+					</a></p>
+				</div>
+			</div>
+			<div class="one-third-col">
+				<div class="rounding-shadow"><!--o--></div>
+				<div class="featured_project">
+					<h1>Избран проект</h1>
+					<h2>Nivea Кампания</h2>
+					<div class="frame">
+						<img src="images/temp/1.png" alt="" />
+					</div>
+					<p>This section offers great possibilities to compare plans, products.</p>
+					<ul>
+						<li>SEO Optimised</li>
+						<li>Browser History</li>
+					</ul>
+					<p class="btn"><a href="#">
+						<span class="left"><!--o--></span>
+						<span class="mid">прочети още</span>
+						<span class="right"><!--o--></span>
+					</a></p>
+					<div class="bottom-shadow"><!--o--></div>
+				</div>
+			</div>
+			<div class="one-third-col">
+				<div class="single_project">
+					<h2>Nivea Кампания</h2>
+					<div class="frame">
+						<img src="images/temp/1.png" alt="" />
+					</div>
+					<p>This section offers great possibilities to compare plans, products.</p>
+					<ul>
+						<li>SEO Optimised</li>
+						<li>Browser History</li>
+					</ul>
+					<p class="btn"><a href="#">
+						<span class="left"><!--o--></span>
+						<span class="mid">прочети още</span>
+						<span class="right"><!--o--></span>
+					</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,116 @@
+/**
+  * @class Ext.Tab
+  */
+@mixin extjs-tab {
+//    @include x-frame(
+//        $cls: 'tab',
+//        $ui: 'default-top',
+//        $border-radius: $tab-top-border-radius,
+//        $border-width: $tab-top-border-width,
+//        $background-color: $tab-base-color,
+//        $background-gradient: $tab-background-gradient,
+//        $background-direction: top,
+//        $table: true
+//    );
+
+//    @include x-frame(
+//        $cls: 'tab',
+//        $ui: 'default-bottom',
+//        $border-radius: $tab-bottom-border-radius,
+//        $border-width: $tab-bottom-border-width,
+//        $background-color: $tab-base-color,
+//        $background-gradient: $tab-background-gradient,
+//        $background-direction: bottom,
+//        $table: true
+//    );
+
+    .#{$prefix}tab {
+        z-index: 1;
+        margin: 0 $tab-spacing 0 0;
+        display: inline-block;
+        // @tag iezoomhack
+        *display: inline;
+//        height: $tab-height;
+//        border-color: $tab-border-color;
+        @extend .mr-white-glove;
+
+        em {
+            display: block;
+            padding: 7px 22px 8px 22px;
+            line-height: 1px;
+        }
+
+        button {
+            background: none;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            -webkit-appearance: none;
+
+            color: $tab-color;
+
+            @extend .outline-none;
+            @extend .ellipsis;
+
+            &::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            .#{$prefix}tab-inner {
+                font-size: $tab-font-size;
+
+                @if $tab-font-weight {
+                    font-weight: $tab-font-weight;
+                }
+                @if $tab-font-family {
+                    font-family: $tab-font-family;
+                }
+                
+                background-color: transparent;
+                background-repeat: no-repeat;
+                background-position: 0 -2px;
+                display: block;
+                text-align: center;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .#{$prefix}tab-close-btn {
+        @include pictos('*', $size: 12px, $include-states: false);
+
+        display: block;
+        position: absolute !important;
+        top: 5px;
+        right: 2px;
+
+        width: 13px;
+        height: 13px;
+
+        text-decoration: none;
+
+        @include opacity(.6);
+    }
+
+    .#{$prefix}tab-close-btn:hover {
+        @include opacity(1);
+    }
+
+    .x-panel-default-framed .x-tab-default-top {
+        @include border-radius($tab-top-border-radius);
+    }
+
+    .x-panel-default-framed .x-tab-default-bottom {
+        @include border-radius($tab-bottom-border-radius);
+    }
+
+    .#{$prefix}tab-disabled {
+       

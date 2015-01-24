@@ -1,0 +1,105 @@
+
+
+#splash_page{
+  display:none;
+  position:relative;
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+
+#splash_background{
+  background-color: #000;
+  overflow: hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-align: center;
+  img{
+    height:100%;
+  }
+}
+
+
+#splash_container{
+  display:none;
+  position:relative;
+  top:20%;
+  width:50%;
+
+  height:auto;
+  margin:auto;
+  @include border-box;
+  #logo_intro_container{
+    width:100%;
+    img{
+     margin:auto;
+      width:100%;
+    }
+  }
+  #proceed_languages{
+    display: inline-block;
+    display: none;
+    width:100%;
+    position:relative;
+    a{
+      position:relative;
+
+      width:50%;
+      text-decoration: none;
+      color:white;
+      text-align: center;
+    }
+
+    #proceed_in_english,  #proceed_in_bulgarian{
+      background-color: rgba(100,100,100,0.6);
+      background-color: $main_color;
+      opacity: 1;
+      text-align: center;
+      border-radius: 3px;
+      width:50%;
+      max-width:41%;
+      font-size:1.2em;
+
+      padding:10px 0px ;
+      float:left;
+      margin:{
+        left:3%;
+        right:5%;
+      };
+      span{
+
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 760px){
+  #splash_container{
+    width:98%;
+    margin:auto;
+    #logo_intro_container{
+      img{
+
+      }
+    }
+    #proceed_languages{
+      margin-top: 30px;
+      a{
+
+      }
+
+      #proceed_in_english,  #proceed_in_bulgarian{
+
+        span{
+
+        }
+      }
+
+    }
+  }
+
+}

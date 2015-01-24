@@ -1,0 +1,58 @@
+<div class="shadow_footer"><!--o--></div>
+<div id="footer">
+	<div class="blue_separator"><!--o--></div>
+	<div class="wrapper">
+		<div class="one-forth-col">
+			<h1>Информация</h1>
+			<ul>
+				<li><a href="#">Мултимедия</a></li>
+				<li><a href="#">Дискове</a></li>
+				<li><a href="#">Уеб Сайтове</a></li>
+				<li><a href="#">Новини</a></li>
+				<li><a href="#">Контакти</a></li>
+			</ul>
+		</div>
+		<div class="one-forth-col">
+			<h1>Компанията</h1>
+			<ul>
+				<li><a href="#">Мисия и визия</a></li>
+				<li><a href="#">Исория</a></li>
+				<li><a href="#">Награди</a></li>
+				<li><a href="#">Партнвори</a></li>
+			</ul>
+		</div>
+		<div class="one-forth-col">
+			<h1>Продукти</h1>
+			<ul>
+				<li><a href="#">Някакви продукти</a></li>
+				<li><a href="#">Някакви</a></li>
+				<li><a href="#">Продукти</a></li>
+				<li><a href="#">Джъстин Тимберлейк</a></li>
+				<li><a href="#">E най-добрия</a></li>
+			</ul>
+		</div>
+		<div class="one-forth-col">
+			<h1>Социални мрежи</h1>
+			<ul class="social-icons">
+				<li><a href="#"><span class="tweet"><!---o--></span></a></li>
+				<li><a href="#"><span class="fb"><!---o--></span></a></li>
+				<li><a href="#"><span class="digg"><!---o--></span></a></li>
+				<li><a href="#"><span class="yt"><!---o--></span></a></li>
+				<li><a href="#"><span class="vimeo"><!---o--></span></a></li>
+				<li><a href="#"><span class="skype"><!---o--></span></a></li>
+			</ul>
+			<h2>Copy information</h2>
+			<ul class="list">
+				<li><span class="home"><!---o--></span><a href="#">Начало</a></li>
+				<li><span class="map"><!---o--></span><a href="#">Карта на сайта</a></li>
+				<li><span class="letter"><!---o--></span><a href="#">Правна рамка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copy">
+		<div class="wraper">
+			<p>M-design LTD&nbsp;&nbsp;&nbsp;&nbsp;2001 - 2012&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved</p>
+			<img src="images/logos/b&w.png" alt="" />
+		</div>
+	</div>
+</div>
